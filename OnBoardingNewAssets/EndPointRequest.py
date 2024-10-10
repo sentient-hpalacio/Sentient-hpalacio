@@ -17,7 +17,7 @@ def _get_token(endpoint_choice) -> dict:
         if endpoint_choice == 1:
             dc_login = 'https://2a4p5ipvl9.execute-api.us-east-1.amazonaws.com/prod/login'  # STG endpoint
         else:
-            dc_login = 'https://mhsq5ujf0l.execute-api.us-east-1.amazonaws.com/prod/customers'  # PROD endpoint
+            dc_login = 'https://mhsq5ujf0l.execute-api.us-east-1.amazonaws.com/prod/login'  # PROD endpoint
 
         credentials = get_credentials()
         dc_conn = requests.post(dc_login, json=credentials)
@@ -29,7 +29,8 @@ def _get_token(endpoint_choice) -> dict:
 
 
 def dc_request_params(cust_name, cust_id):
-    url = "https://41j4w5l516.execute-api.us-east-1.amazonaws.com/prod/validate"
+    #url = "https://41j4w5l516.execute-api.us-east-1.amazonaws.com/prod/validate" #stg
+    url = "https://t75covfr4d.execute-api.us-east-1.amazonaws.com/prod/validate/" #prod
     payload = {'comprehensiveSync': "true", 'customerId': cust_id, "customerIdentifier": cust_name}
     return url, payload
 
