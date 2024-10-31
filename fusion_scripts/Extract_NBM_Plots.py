@@ -6,17 +6,17 @@ import re
 
 # User Inputs
 bucket_name = 'central-results-storage-stg'
-deployment_date = '2024-09'
+deployment_date = '2024-11'
 pattern = r'^.*\.png$'
 
 costumer = 'Liberty' #Upper case sensitive
-local_dir = 'results_NBM_2_Liberty'
+local_dir = 'results_NBM_3_Liberty'
 
 prefix = os.path.join(costumer, deployment_date).replace('\\', '/') + '/'
 pattern = prefix + r'*NBM*/.*/.*\.png$'
 string_to_match = 'NBM_'
 # Crear patrón regex para coincidir con directorios que contienen la cadena especificada y archivos .png
-pattern = rf'{prefix}{costumer}_{string_to_match}.*/.*2.png$'
+pattern = rf'{prefix}{costumer}_{string_to_match}.*/.*3.png$'
 
 
 # pattern =r'Liberty/2024-06/Liberty_NBM.*/.*2.png$'

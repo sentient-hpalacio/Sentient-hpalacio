@@ -28,9 +28,13 @@ def _get_token(endpoint_choice) -> dict:
         return {}
 
 
-def dc_request_params(cust_name, cust_id):
-    #url = "https://41j4w5l516.execute-api.us-east-1.amazonaws.com/prod/validate" #stg
-    url = "https://t75covfr4d.execute-api.us-east-1.amazonaws.com/prod/validate/" #prod
+def dc_request_params(cust_name, cust_id, endpoint_choice):
+
+    if endpoint_choice == 1:
+        url = "https://41j4w5l516.execute-api.us-east-1.amazonaws.com/prod/validate" #stg
+    else:
+        url = "https://t75covfr4d.execute-api.us-east-1.amazonaws.com/prod/validate/" #prod
+
     payload = {'comprehensiveSync': "true", 'customerId': cust_id, "customerIdentifier": cust_name}
     return url, payload
 
@@ -42,7 +46,7 @@ def make_endpoint_call(cname, cid, endpoint_choice):
         if not token:
             raise ValueError("Token retrieval failed")
         s.headers.update(token)
-        url, payload = dc_request_params(cname, cid)
+        url, payload = dc_request_params(cname, cid, endpoint_choice)
         response = s.post(url, json=payload)
         response.raise_for_status()
         return response.json()

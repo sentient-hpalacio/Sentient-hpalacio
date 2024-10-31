@@ -13,7 +13,7 @@ import boto3
 
 customer = 'Liberty'
 
-deployment_year_month = '2024-09'
+deployment_year_month = '2024-11'
 
 crs_bucket_name = "central-results-storage-stg"
 

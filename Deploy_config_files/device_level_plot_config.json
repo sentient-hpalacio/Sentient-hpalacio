@@ -1,0 +1,150 @@
+{
+    "customer": "liberty",
+    "plant": "MN",
+    "device": "WTG001",
+    "dashboards": [
+        {
+            "dashboard_identifier": "asset_insights",
+            "dashboard_name": "Health Insights",
+            "plots": [
+                {
+                    "plot_name": "Anomaly Detection Engine (ADE) Results",
+                    "model": "ade",
+                    "information_type": "ade_plot",
+                    "plot_url": null
+                },
+                {
+                    "plot_name": "Fault Analytics (FA) Results",
+                    "model": "fa2",
+                    "information_type": "fa2_plot",
+                    "plot_url": null
+                }
+            ],
+            "layouts": [
+                {
+                    "component": "gbx",
+                    "plots": [
+                        {
+                            "plot_name": "Gearbox Normal Behavior Model (NBM) Results",
+                            "model": "nbm",
+                            "information_type": "nbm-gbx_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Gearbox Temperature Damage Model (TDM) Results",
+                            "model": "tdm",
+                            "information_type": "tdm-gbx_plot",
+                            "plot_url": null
+                        }
+                    ]
+                },
+                {
+                    "component": "gen",
+                    "plots": [
+                        {
+                            "plot_name": "Generator Normal Behavior Model (NBM) Results",
+                            "model": "nbm",
+                            "information_type": "nbm-gen_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Generator Temperature Damage Model (TDM) Results",
+                            "model": "tdm",
+                            "information_type": "tdm-gen_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Generator Temperature Imbalance Model (TIM) Results",
+                            "model": "tim",
+                            "information_type": "tim-gen_plot",
+                            "plot_url": null
+                        }
+                    ]
+                },
+                {
+                    "component": "mb",
+                    "plots": [
+                        {
+                            "plot_name": "Main Bearing RS Normal Behavior Model (NBM) Results",
+                            "model": "nbm",
+                            "information_type": "nbm-ms-brg-rs_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Main Bearing RS Temperature Damage Model (TDM) Results",
+                            "model": "tdm",
+                            "information_type": "tdm-ms-brg-rs_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Main Bearing GS Normal Behavior Model (NBM) Results",
+                            "model": "nbm",
+                            "information_type": "nbm-ms-brg-gs_plot",
+                            "plot_url": null
+                        },
+                        {
+                            "plot_name": "Main Bearing GS Temperature Damage Model (TDM) Results",
+                            "model": "tdm",
+                            "information_type": "tdm-ms-brg-gs_plot",
+                            "plot_url": null
+                        }
+                    ]
+                },
+                {
+                    "component": "trans",
+                    "plots": [
+                        {
+                            "plot_name": "Transformer Temperature Imbalance Model (TIM) Results",
+                            "model": "tim",
+                            "information_type": "tim-trans_plot",
+                            "plot_url": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "dashboard_identifier": "performance_insights",
+            "dashboard_name": "Performance Insights",
+            "plots": [
+                {
+                    "plot_name": "Asset Underperformance (AUP) Results",
+                    "model": "aup",
+                    "information_type": "aup_plot",
+                    "plot_url": null
+                },
+                {
+                    "plot_name": "Power Curve Monitoring (PCM) Results",
+                    "model": "pcm",
+                    "information_type": "pcm_plot",
+                    "plot_url": null
+                },
+                {
+                    "plot_name": "Pitch Imbalance Model (PIM) Results",
+                    "model": "pim",
+                    "information_type": "pim_plot",
+                    "plot_url": null
+                },
+                {
+                    "plot_name": "Yaw Misalignment Model (YMM) Results",
+                    "model": "ymm",
+                    "information_type": "ymm_plot",
+                    "plot_url": null
+                }
+            ]
+        },
+        {
+            "dashboard_identifier": "visualizations",
+            "dashboard_name": "Visualizations",
+            "plots": [
+                {
+                    "plot_name": "Technical Dashboard Visualization",
+                    "plot_identifier": "tdv_plot",
+                    "information_type": "tdv_plot",
+                    "model": "tdv",
+                    "plot_url": null
+                }
+            ]
+        }
+    ]
+}
