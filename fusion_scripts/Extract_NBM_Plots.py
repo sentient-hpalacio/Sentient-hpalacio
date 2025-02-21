@@ -6,11 +6,11 @@ import re
 
 # User Inputs
 bucket_name = 'central-results-storage-stg'
-deployment_date = '2024-11'
+deployment_date = '2025-02'
 pattern = r'^.*\.png$'
 
-costumer = 'Liberty' #Upper case sensitive
-local_dir = 'results_NBM_3_Liberty'
+costumer = 'Shellonshore' #Upper case sensitive
+local_dir = 'results_NBM_3_Shellonshore2025_02'
 
 prefix = os.path.join(costumer, deployment_date).replace('\\', '/') + '/'
 pattern = prefix + r'*NBM*/.*/.*\.png$'
